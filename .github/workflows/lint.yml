@@ -17,7 +17,9 @@ on:
       - 'fastlane/**'
       - 'scripts/**'
       - '*.md'
-
+  workflow_dispatch: # 允許在 GitHub Actions 頁面手動點擊執行
+  workflow_call:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
