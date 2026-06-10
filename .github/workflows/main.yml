@@ -28,7 +28,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew assembleDebug # 編譯 Debug 版本，不需要簽名密鑰
+        run: ./gradlew assembleRelease 
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
